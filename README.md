@@ -103,4 +103,4 @@ Typical production flow:
 
 ## License
 
-No license file is currently defined in this repository.
+MIT. See [LICENSE](LICENSE).
