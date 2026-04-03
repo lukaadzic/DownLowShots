@@ -5,7 +5,12 @@
       "Bash(npx create-next-app@latest down-low-shots --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes)",
       "Bash(cp -r /private/tmp/down-low-shots/ /Users/lukaadzic/Projects/DownLowShots/)",
       "Bash(rm -rf /private/tmp/down-low-shots)",
-      "Bash(npx shadcn@latest init -d --yes)"
+      "Bash(npx shadcn@latest init -d --yes)",
+      "Bash(npx shadcn@latest add card dialog input label select textarea separator badge skeleton sheet navigation-menu aspect-ratio calendar popover form -y)",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:www.aaronpoeandco.com)"
     ]
   }
 }
