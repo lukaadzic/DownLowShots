@@ -13,7 +13,7 @@ declare global {
 }
 
 const CAL_NAMESPACE = "downlowshots";
-const CAL_LINK = "lukaadzic/professional-headshot-booking";
+const CAL_LINK = "https://cal.com/downlowshots/book-a-session";
 const CAL_ORIGIN = "https://app.cal.com";
 const CAL_CONTAINER_ID = "downlowshots-cal-inline";
 
