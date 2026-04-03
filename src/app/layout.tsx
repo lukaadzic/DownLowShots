@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Down Low Shots | Philadelphia Portrait Photography",
+    default: "Down Low Shots | Philadelphia Affordable professional Photography",
     template: "%s | Down Low Shots",
   },
   description:
