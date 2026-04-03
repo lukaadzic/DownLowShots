@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <div className="px-4 pb-24 pt-28 sm:px-6 sm:pb-28 lg:px-8">
-      <div className="mx-auto max-w-[1280px] border-b border-foreground/10 pb-12">
+      <div className="mx-auto max-w-[1440px]">
+        <div className="overflow-hidden rounded-[2rem] border border-foreground/10 bg-[linear-gradient(165deg,rgba(255,255,255,0.62),rgba(255,255,255,0.22))] px-6 pb-12 pt-10 shadow-[0_24px_70px_-55px_rgba(17,17,17,0.35)] sm:px-10 sm:pt-12">
         <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
           Portfolio
         </p>
@@ -21,6 +22,7 @@ export default function PortfolioPage() {
           A curated edit of our portrait language across clean studio frames,
           natural-light headshots, and more editorial sessions.
         </p>
+        </div>
       </div>
       <GalleryGrid />
     </div>

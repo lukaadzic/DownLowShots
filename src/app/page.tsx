@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <section className="px-4 pt-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-[1480px] pb-14 pt-4 sm:pt-6 md:pb-16 lg:pt-8">
+        <div className="mx-auto max-w-[1480px] pb-10 pt-4 sm:pt-6 md:pb-16 lg:pt-8">
           <div className="mx-auto flex min-h-[52vh] max-w-[980px] flex-col items-center justify-center pt-6 sm:pt-8 text-center">
             <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
               Upenn Students • Philadelphia, PA

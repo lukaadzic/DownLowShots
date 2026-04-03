@@ -36,8 +36,8 @@ export function GalleryGrid() {
     <>
       <GalleryFilter active={active} onFilter={setActive} />
 
-      <div className="mx-auto max-w-[1280px] px-0 py-12">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto mt-8 max-w-[1440px] px-0 pb-12 sm:pb-16">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           <AnimatePresence mode="popLayout">
             {filtered.map((image, i) => (
               <GalleryCard

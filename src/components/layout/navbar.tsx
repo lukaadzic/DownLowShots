@@ -11,7 +11,6 @@ import { MobileNav } from "./mobile-nav";
 
 const links = [
   { href: "/#featured", label: "Work" },
-  { href: "/about", label: "Information" },
   { href: CAL_BOOKING_URL, label: "Book Session" },
 ];
 

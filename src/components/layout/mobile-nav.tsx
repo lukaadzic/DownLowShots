@@ -16,7 +16,6 @@ import { CAL_BOOKING_URL } from "@/lib/site-config";
 
 const links = [
   { href: "/#featured", label: "Work" },
-  { href: "/about", label: "Information" },
   { href: CAL_BOOKING_URL, label: "Book Session" },
 ];
 
