@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { GalleryCard } from "./gallery-card";
 import { GalleryFilter } from "./gallery-filter";
 import { Lightbox } from "./lightbox";
@@ -34,8 +34,15 @@ export function GalleryGrid() {
       <GalleryFilter active={active} onFilter={setActive} />
 
       <div className="mx-auto mt-8 max-w-[1440px] px-0 pb-12 sm:pb-16">
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={active}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6"
+          >
             {filtered.map((image, i) => (
               <GalleryCard
                 key={image.id}
@@ -44,8 +51,8 @@ export function GalleryGrid() {
                 onClick={() => setLightboxImage(image)}
               />
             ))}
-          </AnimatePresence>
-        </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       <Lightbox

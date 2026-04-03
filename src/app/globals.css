@@ -95,8 +95,11 @@
 }
 
 .portrait-marquee {
-  animation: portrait-marquee 18s linear infinite;
+  animation: portrait-marquee 24s linear infinite;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   will-change: transform;
+  contain: paint;
 }
 
 @media (prefers-reduced-motion: reduce) {

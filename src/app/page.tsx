@@ -7,26 +7,38 @@ const floatingPortraits = [
   {
     src: "/portfolio-01.jpeg",
     alt: "Outdoor portrait seated near stone architecture",
+    width: 4672,
+    height: 7008,
   },
   {
     src: "/portfolio-02.jpeg",
     alt: "Spring portrait under blooming trees",
+    width: 7008,
+    height: 4672,
   },
   {
     src: "/portfolio-03.jpeg",
     alt: "Clean indoor headshot against neutral wall",
+    width: 4672,
+    height: 7008,
   },
   {
     src: "/portfolio-04.jpeg",
     alt: "Warm-toned portrait seated by window light",
+    width: 7008,
+    height: 4672,
   },
   {
     src: "/portfolio-09.jpg",
     alt: "Professional portrait in navy suit seated on chair",
+    width: 7008,
+    height: 4672,
   },
   {
     src: "/portfolio-10.jpg",
     alt: "Corporate headshot in blue hallway",
+    width: 7008,
+    height: 4672,
   },
 ];
 
@@ -44,7 +56,7 @@ export default function Home() {
                 Quick, clean headshots and portraits.
               </p>
               <p className="mx-auto max-w-3xl text-balance text-[clamp(1.05rem,1.9vw,1.45rem)] leading-[1.45] tracking-[-0.03em] text-muted-foreground">
-                Over 5 years of experience. Sharp photos for internships, LinkedIn, birthdays, teams,
+                Sharp photos for internships, LinkedIn, birthdays, Sororities/fraternities,
                 and personal brands.
               </p>
             </div>
@@ -87,12 +99,9 @@ export default function Home() {
                     key={`${groupIndex}-${portrait.alt}`}
                     className={cn(
                       "relative w-[11rem] shrink-0 overflow-hidden rounded-[1.75rem] bg-muted shadow-[0_24px_45px_-34px_rgba(17,17,17,0.45)] sm:w-[14rem] lg:w-[16rem]",
-                      index % 3 === 0
-                        ? "mt-8 aspect-[4/5]"
-                        : index % 3 === 1
-                          ? "aspect-[5/6]"
-                          : "mt-4 aspect-[3/4]"
+                      index % 3 === 0 ? "mt-8" : index % 3 === 1 ? "" : "mt-4"
                     )}
+                    style={{ aspectRatio: `${portrait.width} / ${portrait.height}` }}
                   >
                     <Image
                       src={portrait.src}
@@ -100,7 +109,7 @@ export default function Home() {
                       fill
                       unoptimized
                       quality={100}
-                      priority={groupIndex === 0 && index < 3}
+                      loading="eager"
                       sizes="(max-width: 640px) 11rem, (max-width: 1024px) 14rem, 16rem"
                       className="object-cover"
                     />
@@ -108,8 +117,8 @@ export default function Home() {
                 ))}
               </div>
             ))}
+            </div>
           </div>
-        </div>
       </section>
 
     </div>

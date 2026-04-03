@@ -19,10 +19,10 @@ export function GalleryCard({ image, index, onClick }: GalleryCardProps) {
   return (
     <motion.div
       layout
-      initial={{ opacity: 0, y: 18, scale: 0.985 }}
+      initial={{ opacity: 0, y: 10, scale: 0.992 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 18 }}
-      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.04 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1], delay: index * 0.012 }}
       className="group cursor-pointer"
       onClick={onClick}
     >

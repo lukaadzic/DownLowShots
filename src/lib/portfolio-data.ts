@@ -5,6 +5,8 @@ export interface PortfolioImage {
   src: string;
   alt: string;
   category: Category;
+  width: number;
+  height: number;
 }
 
 export const categories: { value: Category; label: string }[] = [
@@ -19,71 +21,95 @@ export const portfolioImages: PortfolioImage[] = [
     src: "/portfolio-01.jpeg",
     alt: "Outdoor portrait seated near stone architecture",
     category: "birthdays",
+    width: 4672,
+    height: 7008,
   },
   {
     id: "2",
     src: "/portfolio-02.jpeg",
-    alt: "Spring portrait under blooming trees",
-    category: "birthdays",
+    alt: "headshot under blooming trees",
+    category: "headshots",
+    width: 7008,
+    height: 4672,
   },
   {
     id: "3",
     src: "/portfolio-03.jpeg",
     alt: "Clean indoor headshot against neutral wall",
-    category: "headshots",
+    category: "personal-branding",
+    width: 4672,
+    height: 7008,
   },
   {
     id: "4",
     src: "/portfolio-04.jpeg",
     alt: "Warm-toned portrait seated by window light",
     category: "headshots",
+    width: 7008,
+    height: 4672,
   },
   {
     id: "5",
     src: "/portfolio-05.jpeg",
     alt: "Headshot with patterned dark backdrop",
     category: "birthdays",
+    width: 4672,
+    height: 7008,
   },
   {
     id: "6",
     src: "/portfolio-06.jpeg",
     alt: "Portrait seated on lounge bench",
-    category: "personal-branding",
+    category: "headshots",
+    width: 7008,
+    height: 4672,
   },
   {
     id: "7",
     src: "/portfolio-07.jpeg",
     alt: "Professional portrait seated in navy suit",
     category: "personal-branding",
+    width: 4672,
+    height: 7008,
   },
   {
     id: "8",
     src: "/portfolio-08.jpg",
     alt: "Professional portrait leaning on blue railing",
     category: "headshots",
+    width: 7008,
+    height: 4672,
   },
   {
     id: "9",
     src: "/portfolio-09.jpg",
     alt: "Confident portrait with crossed arms in conference room",
-    category: "personal-branding",
+    category: "headshots",
+    width: 7008,
+    height: 4672,
   },
   {
     id: "10",
     src: "/portfolio-10.jpg",
     alt: "Corporate headshot in blue-toned corridor",
     category: "headshots",
+    width: 7008,
+    height: 4672,
   },
   {
     id: "11",
     src: "/portfolio-11.jpg",
     alt: "Natural light portrait with soft smile",
-    category: "birthdays",
+    category: "headshots",
+    width: 4672,
+    height: 7008,
   },
   {
     id: "12",
     src: "/portfolio-12.jpeg",
     alt: "Portrait in black outfit with clean framing",
     category: "birthdays",
+    width: 7008,
+    height: 4672,
   },
 ];
