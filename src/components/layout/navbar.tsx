@@ -12,7 +12,7 @@ import { MobileNav } from "./mobile-nav";
 const links = [
   { href: "/", label: "Home" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: CAL_BOOKING_URL, label: "Book Session" },
+  { href: CAL_BOOKING_URL, label: "Book a Session" },
 ];
 
 export function Navbar() {

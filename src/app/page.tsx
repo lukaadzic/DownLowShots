@@ -51,17 +51,17 @@ export default function Home() {
             <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-muted-foreground">
               Upenn Students • Philadelphia, PA
             </p>
-            <div className="mt-6 max-w-4xl space-y-5">
+            <div className="mt-3 max-w-4xl space-y-5">
               <p className="text-balance text-[clamp(2rem,4.3vw,4rem)] leading-[1.08] tracking-[-0.06em] text-foreground">
                 Quick, clean headshots and portraits.
               </p>
               <p className="mx-auto max-w-3xl text-balance text-[clamp(1.05rem,1.9vw,1.45rem)] leading-[1.45] tracking-[-0.03em] text-muted-foreground">
-                Sharp photos for internships, LinkedIn, birthdays, Sororities/fraternities,
-                and personal brands.
+                Professional photos for internships, LinkedIn, birthdays, Sororities/fraternities,
+                and personal branding.
               </p>
             </div>
-            <p className="mt-9 text-[clamp(1.4rem,2.8vw,2.2rem)] leading-[1.15] tracking-[-0.045em] text-foreground">
-              Headshots are $50 per person.
+            <p className="mt-6 text-[clamp(1.4rem,2.8vw,2.2rem)] leading-[1.15] tracking-[-0.045em] text-foreground">
+              Sessions are $50/per person.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -70,7 +70,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="rounded-full bg-foreground px-5 py-3 text-xs font-medium uppercase tracking-[0.18em] text-background"
               >
-                Book a Shoot
+                Book a Session
               </Link>
               <Link
                 href="/portfolio"
@@ -113,6 +113,7 @@ export default function Home() {
                       unoptimized
                       quality={100}
                       loading="eager"
+                      priority={groupIndex === 0 && index < 3}
                       sizes="(max-width: 640px) 11rem, (max-width: 1024px) 14rem, 16rem"
                       className="object-cover"
                     />

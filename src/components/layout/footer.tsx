@@ -11,7 +11,7 @@ export function Footer() {
               Down Low Shots
             </p>
             <p className="mt-4 max-w-xl text-[clamp(1.45rem,2.8vw,2.3rem)] leading-[1.06] tracking-[-0.045em] text-foreground">
-              Premium Affordable Headshots by UPenn Students.
+              Professional Affordable photos by UPenn Students.
             </p>
             <p className="mt-6 text-sm text-muted-foreground">
               Philadelphia, Pennsylvania
@@ -56,7 +56,7 @@ export function Footer() {
                 downlowshots@gmail.com
               </Link>
               <p>Philadelphia, PA</p>
-              <p>Available for headshots, portraits, and personal branding sessions.</p>
+              <p>Available for Headshots, Board photos, Frat/Sorority pics, Birthdays, Personal branding.</p>
             </div>
           </div>
         </div>
