@@ -5,8 +5,8 @@ import { categories, type Category } from "@/lib/portfolio-data";
 import { cn } from "@/lib/utils";
 
 interface GalleryFilterProps {
-  active: Category | "all";
-  onFilter: (category: Category | "all") => void;
+  active: Category;
+  onFilter: (category: Category) => void;
 }
 
 export function GalleryFilter({ active, onFilter }: GalleryFilterProps) {

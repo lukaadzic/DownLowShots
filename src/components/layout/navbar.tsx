@@ -10,7 +10,8 @@ import { CAL_BOOKING_URL } from "@/lib/site-config";
 import { MobileNav } from "./mobile-nav";
 
 const links = [
-  { href: "/#featured", label: "Work" },
+  { href: "/", label: "Home" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: CAL_BOOKING_URL, label: "Book Session" },
 ];
 

@@ -8,14 +8,11 @@ import { Lightbox } from "./lightbox";
 import { portfolioImages, type Category, type PortfolioImage } from "@/lib/portfolio-data";
 
 export function GalleryGrid() {
-  const [active, setActive] = useState<Category | "all">("all");
+  const [active, setActive] = useState<Category>("headshots");
   const [lightboxImage, setLightboxImage] = useState<PortfolioImage | null>(null);
 
   const filtered = useMemo(
-    () =>
-      active === "all"
-        ? portfolioImages
-        : portfolioImages.filter((img) => img.category === active),
+    () => portfolioImages.filter((img) => img.category === active),
     [active]
   );
 

@@ -55,6 +55,8 @@ export function Lightbox({ image, images, onClose, onNavigate }: LightboxProps) 
               src={image.src}
               alt={image.alt}
               fill
+              unoptimized
+              quality={100}
               sizes="90vw"
               className="object-contain"
               priority

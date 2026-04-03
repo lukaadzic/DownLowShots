@@ -11,6 +11,11 @@ interface GalleryCardProps {
 }
 
 export function GalleryCard({ image, index, onClick }: GalleryCardProps) {
+  const categoryLabel =
+    image.category === "personal-branding"
+      ? "Personal Branding"
+      : image.category.charAt(0).toUpperCase() + image.category.slice(1);
+
   return (
     <motion.div
       layout
@@ -26,13 +31,15 @@ export function GalleryCard({ image, index, onClick }: GalleryCardProps) {
           src={image.src}
           alt={image.alt}
           fill
+          unoptimized
+          quality={100}
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 33vw"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.045]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/8 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="absolute bottom-0 left-0 right-0 translate-y-1 p-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
           <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white">
-            {image.category}
+            {categoryLabel}
           </span>
         </div>
       </div>

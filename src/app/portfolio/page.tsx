@@ -4,7 +4,7 @@ import { GalleryGrid } from "@/components/portfolio/gallery-grid";
 export const metadata: Metadata = {
   title: "Portfolio | Down Low Shots",
   description:
-    "Browse our collection of portrait, headshot, family, editorial, and studio photography.",
+    "Browse our collection of headshots, birthday sessions, and personal branding photography.",
 };
 
 export default function PortfolioPage() {
@@ -16,11 +16,11 @@ export default function PortfolioPage() {
           Portfolio
         </p>
         <h1 className="mt-4 max-w-4xl font-heading text-[clamp(2.5rem,6vw,5.25rem)] leading-[0.94] tracking-[-0.07em]">
-          Portraits, headshots, and studio work shaped for campaigns, casting, and personal brands.
+          Headshots, birthdays, and personal branding images shaped for real-world use.
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground">
-          A curated edit of our portrait language across clean studio frames,
-          natural-light headshots, and more editorial sessions.
+          A curated edit across polished professional portraits, birthday sessions,
+          and personal branding photography.
         </p>
         </div>
       </div>

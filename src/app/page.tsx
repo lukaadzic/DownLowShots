@@ -5,28 +5,28 @@ import { CAL_BOOKING_URL } from "@/lib/site-config";
 
 const floatingPortraits = [
   {
-    src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200&q=80&auto=format&fit=crop",
-    alt: "Editorial portrait with natural light",
+    src: "/portfolio-01.jpeg",
+    alt: "Outdoor portrait seated near stone architecture",
   },
   {
-    src: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80&auto=format&fit=crop",
-    alt: "Cinematic portrait in a studio",
+    src: "/portfolio-02.jpeg",
+    alt: "Spring portrait under blooming trees",
   },
   {
-    src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&q=80&auto=format&fit=crop",
-    alt: "Headshot with direct eye contact",
+    src: "/portfolio-03.jpeg",
+    alt: "Clean indoor headshot against neutral wall",
   },
   {
-    src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80&auto=format&fit=crop",
-    alt: "Professional portrait for branding",
+    src: "/portfolio-04.jpeg",
+    alt: "Warm-toned portrait seated by window light",
   },
   {
-    src: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=1200&q=80&auto=format&fit=crop",
-    alt: "Clean corporate headshot",
+    src: "/portfolio-09.jpg",
+    alt: "Professional portrait in navy suit seated on chair",
   },
   {
-    src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80&auto=format&fit=crop",
-    alt: "Soft portrait with a pale backdrop",
+    src: "/portfolio-10.jpg",
+    alt: "Corporate headshot in blue hallway",
   },
 ];
 
@@ -98,6 +98,8 @@ export default function Home() {
                       src={portrait.src}
                       alt={portrait.alt}
                       fill
+                      unoptimized
+                      quality={100}
                       priority={groupIndex === 0 && index < 3}
                       sizes="(max-width: 640px) 11rem, (max-width: 1024px) 14rem, 16rem"
                       className="object-cover"

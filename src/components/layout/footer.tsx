@@ -11,7 +11,7 @@ export function Footer() {
               Down Low Shots
             </p>
             <p className="mt-4 max-w-xl text-[clamp(1.45rem,2.8vw,2.3rem)] leading-[1.06] tracking-[-0.045em] text-foreground">
-              Premium Affordable Headshot by UPenn Students.
+              Premium Affordable Headshots by UPenn Students.
             </p>
             <p className="mt-6 text-sm text-muted-foreground">
               Philadelphia, Pennsylvania

@@ -1,4 +1,4 @@
-export type Category = "headshots" | "family" | "editorial" | "studio";
+export type Category = "headshots" | "birthdays" | "personal-branding";
 
 export interface PortfolioImage {
   id: string;
@@ -7,85 +7,83 @@ export interface PortfolioImage {
   category: Category;
 }
 
-export const categories: { value: Category | "all"; label: string }[] = [
-  { value: "all", label: "All" },
+export const categories: { value: Category; label: string }[] = [
   { value: "headshots", label: "Headshots" },
-  { value: "family", label: "Family" },
-  { value: "editorial", label: "Editorial" },
-  { value: "studio", label: "Studio" },
+  { value: "birthdays", label: "Birthdays" },
+  { value: "personal-branding", label: "Personal Branding" },
 ];
 
 export const portfolioImages: PortfolioImage[] = [
   {
     id: "1",
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop",
-    alt: "Professional headshot - male",
-    category: "headshots",
+    src: "/portfolio-01.jpeg",
+    alt: "Outdoor portrait seated near stone architecture",
+    category: "birthdays",
   },
   {
     id: "2",
-    src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80&auto=format&fit=crop",
-    alt: "Professional headshot - female",
-    category: "headshots",
+    src: "/portfolio-02.jpeg",
+    alt: "Spring portrait under blooming trees",
+    category: "birthdays",
   },
   {
     id: "3",
-    src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80&auto=format&fit=crop",
-    alt: "Editorial portrait with dramatic lighting",
-    category: "editorial",
-  },
-  {
-    id: "4",
-    src: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=800&q=80&auto=format&fit=crop",
-    alt: "Family portrait outdoors",
-    category: "family",
-  },
-  {
-    id: "5",
-    src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80&auto=format&fit=crop",
-    alt: "Studio portrait with clean backdrop",
-    category: "studio",
-  },
-  {
-    id: "6",
-    src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80&auto=format&fit=crop",
-    alt: "Male editorial portrait",
-    category: "editorial",
-  },
-  {
-    id: "7",
-    src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80&auto=format&fit=crop",
-    alt: "Studio fashion portrait",
-    category: "studio",
-  },
-  {
-    id: "8",
-    src: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80&auto=format&fit=crop",
-    alt: "Family candid moment",
-    category: "family",
-  },
-  {
-    id: "9",
-    src: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=800&q=80&auto=format&fit=crop",
-    alt: "Corporate headshot",
+    src: "/portfolio-03.jpeg",
+    alt: "Clean indoor headshot against neutral wall",
     category: "headshots",
   },
   {
+    id: "4",
+    src: "/portfolio-04.jpeg",
+    alt: "Warm-toned portrait seated by window light",
+    category: "headshots",
+  },
+  {
+    id: "5",
+    src: "/portfolio-05.jpeg",
+    alt: "Headshot with patterned dark backdrop",
+    category: "birthdays",
+  },
+  {
+    id: "6",
+    src: "/portfolio-06.jpeg",
+    alt: "Portrait seated on lounge bench",
+    category: "personal-branding",
+  },
+  {
+    id: "7",
+    src: "/portfolio-07.jpeg",
+    alt: "Professional portrait seated in navy suit",
+    category: "personal-branding",
+  },
+  {
+    id: "8",
+    src: "/portfolio-08.jpg",
+    alt: "Professional portrait leaning on blue railing",
+    category: "headshots",
+  },
+  {
+    id: "9",
+    src: "/portfolio-09.jpg",
+    alt: "Confident portrait with crossed arms in conference room",
+    category: "personal-branding",
+  },
+  {
     id: "10",
-    src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80&auto=format&fit=crop",
-    alt: "Editorial beauty portrait",
-    category: "editorial",
+    src: "/portfolio-10.jpg",
+    alt: "Corporate headshot in blue-toned corridor",
+    category: "headshots",
   },
   {
     id: "11",
-    src: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80&auto=format&fit=crop",
-    alt: "Natural light studio portrait",
-    category: "studio",
+    src: "/portfolio-11.jpg",
+    alt: "Natural light portrait with soft smile",
+    category: "birthdays",
   },
   {
     id: "12",
-    src: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&q=80&auto=format&fit=crop",
-    alt: "Family lifestyle portrait",
-    category: "family",
+    src: "/portfolio-12.jpeg",
+    alt: "Portrait in black outfit with clean framing",
+    category: "birthdays",
   },
 ];
