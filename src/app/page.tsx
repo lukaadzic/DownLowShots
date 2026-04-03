@@ -99,9 +99,12 @@ export default function Home() {
                     key={`${groupIndex}-${portrait.alt}`}
                     className={cn(
                       "relative w-[11rem] shrink-0 overflow-hidden rounded-[1.75rem] bg-muted shadow-[0_24px_45px_-34px_rgba(17,17,17,0.45)] sm:w-[14rem] lg:w-[16rem]",
-                      index % 3 === 0 ? "mt-8" : index % 3 === 1 ? "" : "mt-4"
+                      index % 3 === 0
+                        ? "mt-8 aspect-[4/5]"
+                        : index % 3 === 1
+                          ? "aspect-[5/6]"
+                          : "mt-4 aspect-[3/4]"
                     )}
-                    style={{ aspectRatio: `${portrait.width} / ${portrait.height}` }}
                   >
                     <Image
                       src={portrait.src}
@@ -117,8 +120,8 @@ export default function Home() {
                 ))}
               </div>
             ))}
-            </div>
           </div>
+        </div>
       </section>
 
     </div>

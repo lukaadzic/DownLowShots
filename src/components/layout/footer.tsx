@@ -33,23 +33,28 @@ export function Footer() {
             </p>
             <div className="mt-5 flex flex-col gap-2.5 text-sm text-foreground/75">
               <Link href="/#featured" className="transition-colors hover:text-foreground">
-                Work
+                Home
               </Link>
               <Link href="/portfolio" className="transition-colors hover:text-foreground">
                 Portfolio
               </Link>
               <Link href="/contact" className="transition-colors hover:text-foreground">
-                Contact
+                Book a Session
               </Link>
             </div>
           </div>
 
           <div>
             <p className="font-mono text-[11px] uppercase tracking-[0.26em] text-muted-foreground">
-              Studio
+              Contact
             </p>
             <div className="mt-5 max-w-sm space-y-3 text-sm leading-6 text-foreground/75">
-              <p>hello@downlowshots.com</p>
+              <Link
+                href="mailto:downlowshots@gmail.com?subject=Booking%20Inquiry%20-%20Shoot&body=Hi%20Down%20Low%20Shots%2C%0A%0AI%27d%20like%20to%20schedule%20a%20shoot.%0A%0APreferred%20date%3A%20%0ALocation%3A%20%0ANumber%20of%20people%3A%20%0AType%20of%20shoot%3A%20%0A%0AThank%20you%21"
+                className="inline-flex text-foreground/80 underline-offset-4 transition-colors hover:text-foreground hover:underline"
+              >
+                downlowshots@gmail.com
+              </Link>
               <p>Philadelphia, PA</p>
               <p>Available for headshots, portraits, and personal branding sessions.</p>
             </div>
