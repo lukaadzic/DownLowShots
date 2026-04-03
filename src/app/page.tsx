@@ -1,7 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
-import { CAL_BOOKING_URL } from "@/lib/site-config";
+import { CAL_BOOKING_URL, SITE_URL } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Philadelphia Student & Professional Headshots",
+  description:
+    "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Philadelphia Student & Professional Headshots",
+    description:
+      "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
+    url: SITE_URL,
+    images: ["/portfolio-02.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Philadelphia Student & Professional Headshots",
+    description:
+      "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
+    images: ["/portfolio-02.jpeg"],
+  },
+};
 
 const floatingPortraits = [
   {

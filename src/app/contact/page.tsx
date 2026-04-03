@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Contact | Down Low Shots",
   description:
     "Book a portrait or studio photography session with Down Low Shots.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function ContactPage() {

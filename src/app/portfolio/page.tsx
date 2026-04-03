@@ -1,10 +1,28 @@
 import type { Metadata } from "next";
 import { GalleryGrid } from "@/components/portfolio/gallery-grid";
+import { SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Down Low Shots",
+  title: "Photography Portfolio",
   description:
-    "Browse our collection of headshots, birthday sessions, and personal branding photography.",
+    "Browse portrait work across headshots, birthday sessions, board photos, Greek life, and personal branding in Philadelphia.",
+  alternates: {
+    canonical: "/portfolio",
+  },
+  openGraph: {
+    title: "Down Low Shots Portfolio",
+    description:
+      "Browse portrait work across headshots, birthday sessions, board photos, Greek life, and personal branding in Philadelphia.",
+    url: `${SITE_URL}/portfolio`,
+    images: ["/portfolio-11.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Down Low Shots Portfolio",
+    description:
+      "Browse portrait work across headshots, birthday sessions, board photos, Greek life, and personal branding in Philadelphia.",
+    images: ["/portfolio-11.jpg"],
+  },
 };
 
 export default function PortfolioPage() {
