@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 import { CAL_BOOKING_URL, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Philadelphia Student & Professional Headshots",
+  title: "Philadelphia Professional Affordable Photography",
   description:
     "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Philadelphia Student & Professional Headshots",
+    title: "Philadelphia Professional Affordable Photography",
     description:
       "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
     url: SITE_URL,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Philadelphia Student & Professional Headshots",
+    title: "Philadelphia Professional Affordable Photography",
     description:
       "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
     images: ["/portfolio-02.jpeg"],
@@ -85,7 +85,7 @@ export default function Home() {
               </p>
             </div>
             <p className="mt-6 text-[clamp(1.4rem,2.8vw,2.2rem)] leading-[1.15] tracking-[-0.045em] text-foreground">
-              Sessions are $50/per person.
+              Sessions are $40/per person.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
               <Link
