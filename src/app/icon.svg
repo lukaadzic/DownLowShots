@@ -1,0 +1,12 @@
+<svg width="220" height="110" viewBox="0 0 220 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .mark {
+      font-family: "Snell Roundhand", "Apple Chancery", "URW Chancery L", "Times New Roman", serif;
+      font-size: 88px;
+      font-style: italic;
+      fill: #111111;
+    }
+  </style>
+  <rect width="220" height="110" fill="transparent"/>
+  <text x="10" y="83" class="mark">DL</text>
+</svg>
