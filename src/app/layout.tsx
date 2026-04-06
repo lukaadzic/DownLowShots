@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   keywords: [
     "Philadelphia photographer",
     "UPenn photographer",
+    "professional headshots Philadelphia",
+    "LinkedIn headshots",
     "student headshots",
     "professional headshots",
     "personal branding photography",
@@ -29,17 +31,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/dl-monogram.svg?v=2",
+        url: "/icon.svg?v=2",
         type: "image/svg+xml",
       },
     ],
-    shortcut: ["/dl-monogram.svg?v=2"],
+    shortcut: ["/icon.svg?v=2"],
   },
   openGraph: {
     type: "website",
     url: SITE_URL,
     siteName: "Down Low Shots",
-    title: "Down Low Shots | Philadelphia Portrait Photography",
+    title: "Down Low Shots | Philadelphia Affordable professional Photography",
     description:
       "Affordable professional photography in Philadelphia for headshots, Greek life, birthdays, and personal branding.",
     images: [
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Down Low Shots | Philadelphia Portrait Photography",
+    title: "Down Low Shots | Philadelphia Affordable professional Photography",
     description:
       "Affordable professional photography in Philadelphia for headshots, Greek life, birthdays, and personal branding.",
     images: ["/portfolio-09.jpg"],
@@ -78,7 +80,7 @@ const localBusinessSchema = {
   "@type": "ProfessionalService",
   name: "Down Low Shots",
   url: SITE_URL,
-  logo: `${SITE_URL}/dl-monogram.svg`,
+  logo: `${SITE_URL}/icon.svg`,
   image: `${SITE_URL}/portfolio-09.jpg`,
   areaServed: "Philadelphia, PA",
   sameAs: [CAL_BOOKING_URL],
