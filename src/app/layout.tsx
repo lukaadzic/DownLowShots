@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon.svg",
+        url: "/favicon.svg?v=4",
         type: "image/svg+xml",
       },
     ],
-    shortcut: ["/icon.svg?v=2"],
+    shortcut: ["/favicon.svg?v=4"],
   },
   openGraph: {
     type: "website",
