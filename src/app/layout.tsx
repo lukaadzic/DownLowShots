@@ -29,11 +29,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/dl-monogram.svg",
+        url: "/dl-monogram.svg?v=2",
         type: "image/svg+xml",
       },
     ],
-    shortcut: ["/dl-monogram.svg"],
+    shortcut: ["/dl-monogram.svg?v=2"],
   },
   openGraph: {
     type: "website",
