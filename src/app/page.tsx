@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 import { CAL_BOOKING_URL, SITE_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Philadelphia Professional Affordable Photography",
+  title: "Down Low Shots | Philadelphia Professional Affordable Photography",
   description:
     "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Philadelphia Professional Affordable Photography",
+    title: "Down Low Shots | Philadelphia Professional Affordable Photography",
     description:
       "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
     url: SITE_URL,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Philadelphia Professional Affordable Photography",
+    title: "Down Low Shots | Philadelphia Professional Affordable Photography",
     description:
       "Book affordable portrait sessions in Philadelphia for internships, LinkedIn, birthdays, Greek life, and personal branding.",
     images: ["/portfolio-02.jpeg"],
